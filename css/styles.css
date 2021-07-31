@@ -1,0 +1,193 @@
+body {
+  background-color: #090B1A;
+  text-align: left;
+  max-width: 1440px;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  width: 12em;
+  font-size: 2.5em;
+}
+
+.accent {
+  color: #AA5CDB;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #FFFFFF;
+  opacity: 0.75;
+  font-family: "Inter", sans-serif;
+  line-height: 2em;
+  margin: 2em 0 4em 0;
+  width: 24em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.twide {
+  width: 25em;
+  text-align: left;
+  table-layout: fixed;
+  line-height: 1px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 0;
+}
+
+.tnarrow {
+  display: none;
+}
+
+tbody {
+  margin: 0;
+}
+
+td {
+  margin: 0;
+}
+
+.card {
+  width: 73em;
+  border-radius: 0.5em;
+  height: 30rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1B1938;
+  overflow: hidden;
+}
+
+.card-left {
+  padding: 4em 4em 4em 4em;
+  flex-shrink: 1;
+  width: 60%;
+}
+
+.card-right {
+  width: 35em;
+  flex-basis: auto;
+  flex-shrink: 0;
+  background-color: #AA5CDB;
+}
+
+img {
+  width: 110%;
+  height: 80%;
+  max-width: 110%;
+  opacity: 0.6;
+  display: block;
+}
+
+
+
+@media (orientation: portrait) {
+  .orientation:after {
+    content: "Portrait."
+  }
+
+  body {
+    background-color: #090B1A;
+    text-align: center;
+    max-width: 375px;
+    margin: auto;
+    height: auto;
+  }
+
+  h1 {
+    width: 10em;
+    font-size: 1.6em;
+    padding-top: 1.5em;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 0.7em;
+  }
+
+  p {
+    color: #FFFFFF;
+    opacity: 0.75;
+    font-family: "Inter", sans-serif;
+    line-height: 2em;
+    width: 17em;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .twide {
+    display: none;
+  }
+
+  .tnarrow {
+    display: flex;
+    text-align: center;
+    line-height: 0.4em;
+    justify-content: center;
+    border-spacing: 0;
+  }
+
+  .card {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #1B1938;
+    overflow: hidden;
+  }
+  .card-left {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-right {
+    width: auto;
+    flex-basis: auto;
+    flex-shrink: 1;
+    background-color: #AA5CDB;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: -1%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    opacity: 0.6;
+    display: block;
+  }
+}
